@@ -1,0 +1,30 @@
+==== PIPO Shift Register Simulation ====
+Initial: Time=0 | clk=0 | load=0 | data_in=0000 | data_out=xxxx
+Time=0 | clk=0 | load=0 | data_in=0000 | data_out=xxxx
+Test Case 1 (Load 1010)    : Time=10 | clk=1 | load=1 | data_in=1010 | data_out=xxxx
+Result of Test Case 1      : Time=20 | clk=0 | load=1 | data_in=1010 | data_out=1010
+Test Case 2 (Load 1100)    : Time=20 | clk=0 | load=1 | data_in=1100 | data_out=1010
+Result of Test Case 2      : Time=30 | clk=1 | load=1 | data_in=1100 | data_out=1010
+Test Case 3 (Hold, load=0) : Time=30 | clk=1 | load=0 | data_in=0110 | data_out=1010
+Result of Test Case 3      : Time=40 | clk=0 | load=0 | data_in=0110 | data_out=1010
+Test Case 4 (Load 1111)    : Time=40 | clk=0 | load=1 | data_in=1111 | data_out=1010
+Result of Test Case 4      : Time=50 | clk=1 | load=1 | data_in=1111 | data_out=1010
+Test Case 5 (Hold, load=0) : Time=50 | clk=1 | load=0 | data_in=0000 | data_out=1010
+Result of Test Case 5      : Time=60 | clk=0 | load=0 | data_in=0000 | data_out=1010
+==== Simulation Finished ====
+
+==== PISO Shift Register Simulation ====
+Initial: Time=0 | clk=0 | shift=0 | parallel_in=0000 | serial_out=x
+Test Case 1 (Load 1010)    : Time=20 | clk=0 | shift=0 | parallel_in=1010 | serial_out=0
+Parallel Loaded: 1010
+Result of Test Case 1      : Time=31 | clk=1 | shift=0 | parallel_in=1010 | temp=1010 | serial_out=0
+Test Case 2 (Shift enabled): Time=40 | clk=0 | shift=1 | parallel_in=1010 | serial_out=0
+After 1st shift: 0101 | Serial: 1
+Result of 1st shift        : Time=51 | clk=1 | shift=1 | parallel_in=1010 | temp=0101 | serial_out=1
+After 2nd shift: 0010 | Serial: 0
+Result of 2nd shift        : Time=71 | clk=1 | shift=1 | parallel_in=1010 | temp=0010 | serial_out=0
+After 3rd shift: 0001 | Serial: 1
+Result of 3rd shift        : Time=91 | clk=1 | shift=1 | parallel_in=1010 | temp=0001 | serial_out=1
+After 4th shift: 0000 | Serial: 0
+Result of 4th shift        : Time=111 | clk=1 | shift=1 | parallel_in=1010 | temp=0000 | serial_out=0
+==== Simulation Finished ====

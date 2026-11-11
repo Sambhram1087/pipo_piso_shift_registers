@@ -1,0 +1,43 @@
+# Simulator artifacts
+*.vvp
+*.out
+*.vcd
+*.wlf
+*.fst
+a.out
+sim
+sim_pipo
+sim_piso
+
+# ModelSim / QuestaSim
+work/
+transcript
+vsim.wlf
+modelsim.ini
+
+# Vivado
+*.jou
+*.log
+*.str
+.Xil/
+*.cache/
+*.hw/
+*.sim/
+*.runs/
+
+# LaTeX build files
+*.aux
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
