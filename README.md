@@ -81,11 +81,6 @@ gtkwave piso_wave.vcd
 
 Console output: [`output/simulation_log.txt`](output/simulation_log.txt)
 
-## Circuit Diagrams
-
-![PIPO circuit](docs/circuit_pipo.png)
-![PISO circuit](docs/circuit_piso.png)
-
 ## Report
 
 Full project report: [`docs/Project_Report.pdf`](docs/Project_Report.pdf)
